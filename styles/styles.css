@@ -1,89 +1,42 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-p {
-  color: #383838;
-  font-size: 24px;
-  text-align: center;
+
+.advantages-name-container {
+  padding: 120px 650px 0;
 }
-.advantages {
-  width: 1440px;
-  height: 569px;
-}
-.advantages > p {
-  width: 306px;
-  height: 47px;
-  padding-top: 120px;
-  padding-left: 567px;
-  padding-right: 567px;
+
+.advantages-name-container h2 {
   font-size: 40px;
 }
-.advantages hr {
+
+.advantages-name-container hr {
   width: 100px;
   height: 4px;
   background-color: #f5bd41;
-  margin-top: 20px;
-  margin-left: 670px;
-  margin-right: 670px;
+  margin: 20px 105px 0;
   border: 0;
 }
-.advantages img {
-  padding-bottom: 48px;
-  padding-left: 98px;
-  padding-right: 98px;
+
+.advantages-content-container{
+  margin: 80px 190px 122px;
 }
-.support {
+
+.advantages-content-item{
+  display: inline-block;
   width: 296px;
-  height: 176px;
-  float: left;
-  margin: 80px 16px 122px 104px;
+  height: 180px;
 }
-.support p {
-  padding-left: 77px;
-  padding-right: 78px;
-  width: 141px;
+
+.advantages-content-item p {
+  color: #383838;
+  font-size: 24px;
+  text-align: center;
   height: 28px;
 }
-.communication {
-  width: 296px;
-  height: 178px;
-  float: left;
-  margin-top: 80px;
-  margin-right: 16px;
-  margin-bottom: 120px;
-}
-.communication p {
-  padding-bottom: 2px;
-  width: 296px;
-  height: 28px;
-}
-.booking {
-  width: 296px;
-  height: 184px;
-  float: left;
-  margin-top: 80px;
-  margin-right: 16px;
-  margin-bottom: 114px;
-}
-.booking p {
-  padding-left: 64px;
-  padding-right: 64px;
-  padding-bottom: 8px;
-  width: 168px;
-  height: 28px;
-}
-.reviews {
-  width: 296px;
-  height: 183px;
-  float: left;
-  margin-top: 80px;
-  margin-right: 104px;
-  margin-bottom: 115px;
-}
-.reviews p {
-  padding-left: 36px;
-  padding-right: 35px;
-  padding-bottom: 7px;
-  width: 225px;
-  height: 28px;
-}
+
+.advantages-content-item img {
+  padding: 0 98px 48px;
+ }

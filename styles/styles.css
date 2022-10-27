@@ -1,42 +1,104 @@
+@import url("./fonts.css");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.advantages-name-container {
-  padding: 120px 650px 0;
+.advantages-container {
+  display: flex;
+  padding: 120px 104px 122px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 80px;
+  height: 569px;
 }
 
-.advantages-name-container h2 {
+.advantages-container-item{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.heading-2 {
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
+  font-weight: 500;
 }
 
-.advantages-name-container hr {
+.line {
   width: 100px;
   height: 4px;
   background-color: #f5bd41;
-  margin: 20px 105px 0;
   border: 0;
 }
 
-.advantages-content-container{
-  margin: 80px 190px 122px;
+.advantages-content-container {
+  display: flex;
+  column-gap: 16px;
 }
 
-.advantages-content-item{
-  display: inline-block;
+.advantages-content-item {
   width: 296px;
-  height: 180px;
-}
-
-.advantages-content-item p {
-  color: #383838;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
-  text-align: center;
-  height: 28px;
+  font-weight: 400;
+  row-gap: 48px;
 }
 
-.advantages-content-item img {
-  padding: 0 98px 48px;
- }
+.footer-container{
+  height: 625px;
+  background-color: #10367C;
+  color: #FFFFFF;
+  padding: 120px 272px 120px 104px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+.footer-content-container{
+  display: flex;
+}
+
+.heading-3{
+  font-family:"Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer-copy{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer-text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.footer-content-item-1{
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-right: 223px;
+}
+
+.footer-content-item-2{
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-right: 283px;
+}
+
+.footer-content-item-3{
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}

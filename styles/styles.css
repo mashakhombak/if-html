@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 
-.advantages-name-container {
+.advantages-heading-container {
   padding: 120px 650px 0;
 }
 
-.advantages-name-container h2 {
+.advantages-heading-container h2 {
   font-size: 40px;
 }
 
-.advantages-name-container hr {
+.advantages-heading-container hr {
   width: 100px;
   height: 4px;
   background-color: #f5bd41;

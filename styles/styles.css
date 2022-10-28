@@ -15,7 +15,7 @@
   height: 569px;
 }
 
-.advantages-container-item{
+.advantages-container-item {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -51,54 +51,41 @@
   row-gap: 48px;
 }
 
-.footer-container{
+.footer-container {
   height: 625px;
-  background-color: #10367C;
-  color: #FFFFFF;
-  padding: 120px 272px 120px 104px;
+  background-color: #10367c;
+  color: #ffffff;
+  padding: 120px 0 120px 104px;
   display: flex;
   flex-direction: column;
   row-gap: 64px;
 }
 
-.footer-content-container{
+.footer-content-container {
   display: flex;
 }
 
-.heading-3{
-  font-family:"Roboto", sans-serif;
+.heading-3 {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
 
-.footer-copy{
+.footer-copy {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
 
-.footer-text{
+.footer-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
 
-.footer-content-item-1{
+.footer-content-item {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
-  margin-right: 223px;
-}
-
-.footer-content-item-2{
-  display: flex;
-  flex-direction: column;
-  row-gap: 24px;
-  margin-right: 283px;
-}
-
-.footer-content-item-3{
-  display: flex;
-  flex-direction: column;
-  row-gap: 24px;
+  width: 416px;
 }

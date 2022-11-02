@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .advantages-container {
@@ -23,7 +24,6 @@
 }
 
 .page-heading {
-  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 500;
 }
@@ -45,7 +45,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   row-gap: 48px;
@@ -66,19 +65,16 @@
 }
 
 .footer-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
 
 .footer-copy {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
 
 .footer-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }

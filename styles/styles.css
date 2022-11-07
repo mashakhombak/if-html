@@ -7,6 +7,144 @@
   font-family: "Roboto", sans-serif;
 }
 
+.top-section {
+  background-image: url(../image/castelmezzano.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  color: #ffffff;
+  padding: 51px 104px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  background-image: url(../image/top-section.png);
+  width: 205px;
+  height: 40px;
+}
+
+.header-content-container {
+  display: flex;
+  column-gap: 48px;
+}
+
+.header-content-item {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.header-night {
+  background-image: url(../image/top-section.png);
+  background-position: -205px;
+  width: 30px;
+  height: 30px;
+}
+
+.header-account {
+  background-image: url(../image/top-section.png);
+  background-position: -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.header-border {
+  padding: 12px 0;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #f5bd41;
+}
+
+.top-page-content {
+  padding: 196px 0 0;
+}
+
+.top-page-heading {
+  font-size: 50px;
+  width: 542px;
+  margin: 0 0 100px;
+}
+
+.top-page-form-name {
+  display: flex;
+  padding: 0 0 24px 24px;
+  column-gap: 221px;
+  font-size: 18px;
+}
+
+.top-page-form {
+  background-color: #ffffff;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+  height: 64px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  color: #383838;
+  border-right: 0;
+}
+
+.form-place {
+  width: 467px;
+  padding: 0 0 0 24px;
+}
+
+.form-date {
+  display: flex;
+  align-items: center;
+  width: 282px;
+  height: 64px;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.form-person {
+  width: 433px;
+  padding: 0 0 0 24px;
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 192px;
+  height: 64px;
+  background-color: #3077c6;
+  border-radius: 8px;
+  border-color: #3077c6;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.top-page-apps-container {
+  display: flex;
+  column-gap: 16px;
+  padding: 120px 0 0;
+  justify-content: center;
+}
+
+.top-page-apps-google {
+  background-image: url(../image/top-section.png);
+  background-position: -275px;
+  width: 135px;
+  height: 40px;
+}
+
+.top-page-apps-store {
+  background-image: url(../image/top-section.png);
+  background-position: -410px;
+  width: 120px;
+  height: 40px;
+}
+
 .advantages-container {
   display: flex;
   padding: 120px 104px 122px;

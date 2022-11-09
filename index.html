@@ -12,41 +12,59 @@
   </head>
   <body>
     <div class="top-section">
-      <div class="header-container">
-        <div class="header-logo"></div>
-        <div class="header-content-container">
-          <div class="header-content-item">
-            <p class="header-border">Stays</p>
-            <p>Attractions</p>
-          </div>
-          <div class="header-content-item">
-            <div class="header-night"></div>
-            <div class="header-account"></div>
-          </div>
-        </div>
-      </div>
-      <div class="top-page-content">
-        <p class="top-page-heading">
-          Discover stays <br />
-          to live, work or just relax
-        </p>
-        <div class="top-page-form-name">
-          <p>Your destination or hotel name</p>
-          <p>Check-in — Check-out</p>
-        </div>
-        <div class="top-page-form">
-          <p class="form-place">New York</p>
-          <div class="form-date">
-            <p>Tue 15 Sept — Sat 19 Sept</p>
-          </div>
-          <p class="form-person">2 Adults — 0 Children — 1 Room</p>
-          <div class="form-button">
-            <p>Search</p>
+      <div class="top-section-content">
+        <div class="header-container">
+          <div class="header-logo"></div>
+          <div class="header-content-container">
+            <div class="header-content-item">
+              <a class="header-border">Stays</a>
+              <a>Attractions</a>
+            </div>
+            <form class="header-content-item">
+              <input class="header-night" type="button" />
+              <input class="header-account" type="button" />
+            </form>
           </div>
         </div>
-        <div class="top-page-apps-container">
-          <div class="top-page-apps-google"></div>
-          <div class="top-page-apps-store"></div>
+        <div class="top-page-content">
+          <h1 class="top-page-heading">
+            Discover stays <br />
+            to live, work or just relax
+          </h1>
+          <form>
+            <div class="top-page-form-label">
+              <label for="top-page-form-place"
+                >Your destination or hotel name</label
+              >
+              <label for="top-page-form-date">Check-in — Check-out</label>
+            </div>
+            <div class="top-page-form-input">
+              <input
+                id="top-page-form-place"
+                type="text"
+                placeholder="New York"
+              />
+              <input
+                id="top-page-form-date"
+                type="text"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
+              />
+              <input
+                class="top-page-form-person"
+                type="text"
+                placeholder="2 Adults — 0 Children — 1 Room"
+              />
+              <input
+                class="top-page-form-button"
+                type="button"
+                value="Search"
+              />
+            </div>
+          </form>
+          <div class="top-page-apps-container">
+            <div class="top-page-apps-google"></div>
+            <div class="top-page-apps-store"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -78,33 +96,35 @@
       </div>
     </div>
     <div class="footer-container">
-      <div class="footer-content-container">
-        <ul class="footer-content-item">
-          <li class="footer-title">About</li>
-          <li class="footer-text">How Triphouse works</li>
-          <li class="footer-text">Careers</li>
-          <li class="footer-text">Privacy</li>
-          <li class="footer-text">Terms</li>
-        </ul>
-        <ul class="footer-content-item">
-          <li class="footer-title">Property types</li>
-          <li class="footer-text">Guest houses</li>
-          <li class="footer-text">Hotels</li>
-          <li class="footer-text">Apartments</li>
-          <li class="footer-text">Villas</li>
-          <li class="footer-text">Holiday homes</li>
-          <li class="footer-text">Hostels</li>
-        </ul>
-        <ul class="footer-content-item">
-          <li class="footer-title">Support</li>
-          <li class="footer-text">Contact Customer Service</li>
-          <li class="footer-text">FAQ</li>
-        </ul>
-      </div>
-      <div class="footer-container-item">
-        <p class="footer-copy">
-          &copy; 2022Triphouse, Inc. All rights reserved
-        </p>
+      <div class="footer-content">
+        <div class="footer-content-container">
+          <ul class="footer-content-item">
+            <li class="footer-title">About</li>
+            <li class="footer-text">How Triphouse works</li>
+            <li class="footer-text">Careers</li>
+            <li class="footer-text">Privacy</li>
+            <li class="footer-text">Terms</li>
+          </ul>
+          <ul class="footer-content-item">
+            <li class="footer-title">Property types</li>
+            <li class="footer-text">Guest houses</li>
+            <li class="footer-text">Hotels</li>
+            <li class="footer-text">Apartments</li>
+            <li class="footer-text">Villas</li>
+            <li class="footer-text">Holiday homes</li>
+            <li class="footer-text">Hostels</li>
+          </ul>
+          <ul class="footer-content-item">
+            <li class="footer-title">Support</li>
+            <li class="footer-text">Contact Customer Service</li>
+            <li class="footer-text">FAQ</li>
+          </ul>
+        </div>
+        <div class="footer-container-item">
+          <p class="footer-copy">
+            &copy; 2022Triphouse, Inc. All rights reserved
+          </p>
+        </div>
       </div>
     </div>
   </body>

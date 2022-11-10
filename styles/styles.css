@@ -65,9 +65,7 @@
 
 .header-border {
   padding: 12px 0;
-  border-bottom-width: 3px;
-  border-bottom-style: solid;
-  border-bottom-color: #f5bd41;
+  border-bottom: 3px solid #f5bd41;
 }
 
 .top-page-content {
@@ -101,10 +99,12 @@
 }
 
 #top-page-form-place {
-  width: 467px;
-  padding: 0 0 0 24px;
+  width: 464px;
+  height: 58px;
+  padding: 0 24px;
   border: none;
   font-size: 18px;
+  font-weight: 400;
 }
 
 #top-page-form-date {
@@ -116,13 +116,16 @@
   border-radius: 8px;
   padding: 0 24px;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .top-page-form-person {
   width: 314px;
+  height: 58px;
   padding: 0 0 0 24px;
   border: none;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .top-page-form-button {

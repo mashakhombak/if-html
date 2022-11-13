@@ -7,6 +7,161 @@
   font-family: "Roboto", sans-serif;
 }
 
+.top-section {
+  background-image: url(../image/castelmezzano.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.top-section-content {
+  width: 1440px;
+  padding: 51px 104px 0;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  background-image: url(../image/top-section.png);
+  width: 205px;
+  height: 40px;
+}
+
+.header-content-container {
+  display: flex;
+  column-gap: 48px;
+}
+
+.header-content-item {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.header-content-item input {
+  background-image: url(../image/top-section.png);
+  border: none;
+  background-color: unset;
+}
+
+.header-night {
+  background-position: -205px;
+  width: 30px;
+  height: 30px;
+}
+
+.header-account {
+  background-position: -235px;
+  width: 40px;
+  height: 40px;
+}
+
+.header-border {
+  padding: 12px 0;
+  border-bottom: 3px solid #f5bd41;
+}
+
+.top-page-content {
+  padding: 196px 0 0;
+}
+
+.top-page-heading {
+  font-size: 50px;
+  font-weight: 500;
+  width: 542px;
+  margin: 0 0 100px;
+}
+
+.top-page-form-label {
+  display: flex;
+  column-gap: 221px;
+  padding: 0 0 24px 24px;
+  font-size: 18px;
+}
+
+.top-page-form-input {
+  background-color: #ffffff;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #383838;
+  border-right: 0;
+}
+
+#top-page-form-place {
+  width: 464px;
+  height: 58px;
+  padding: 0 24px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#top-page-form-date {
+  display: flex;
+  align-items: center;
+  width: 259px;
+  height: 64px;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.top-page-form-person {
+  width: 314px;
+  height: 58px;
+  padding: 0 0 0 24px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.top-page-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 192px;
+  height: 64px;
+  background-color: #3077c6;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.top-page-apps-container {
+  display: flex;
+  column-gap: 16px;
+  padding: 120px 0 0;
+  justify-content: center;
+}
+
+.top-page-apps-google {
+  background-image: url(../image/top-section.png);
+  background-position: -275px;
+  width: 135px;
+  height: 40px;
+}
+
+.top-page-apps-store {
+  background-image: url(../image/top-section.png);
+  background-position: -410px;
+  width: 120px;
+  height: 40px;
+}
+
 .advantages-container {
   display: flex;
   padding: 120px 104px 122px;
@@ -51,9 +206,14 @@
 }
 
 .footer-container {
-  height: 625px;
   background-color: #10367c;
   color: #ffffff;
+}
+
+.footer-content {
+  width: 1440px;
+  height: 625px;
+  margin: 0 auto;
   padding: 120px 0 120px 104px;
   display: flex;
   flex-direction: column;

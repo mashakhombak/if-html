@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/html"
+  xmlns="http://www.w3.org/1999/html"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Trip House" />
@@ -11,117 +15,136 @@
     <link rel="stylesheet" href="./styles/fonts.css" />
   </head>
   <body>
-    <div class="top-section">
-      <div class="top-section-content">
-        <div class="header-container">
-          <div class="header-logo"></div>
-          <div class="header-content-container">
-            <div class="header-content-item">
-              <a class="header-border">Stays</a>
-              <a>Attractions</a>
+    <div class="top-container">
+      <div class="top-content">
+        <div class="header-content">
+          <svg class="header__logo">
+            <use href="./image/sprite.svg#header-logo" />
+          </svg>
+          <div class="header-content__container">
+            <div class="header-content__item">
+              <a class="header__link--border ">Stays</a>
+              <a class="header__link">Attractions</a>
             </div>
-            <form class="header-content-item">
-              <input class="header-night" type="button" />
-              <input class="header-account" type="button" />
-            </form>
+            <div class="header-content__item">
+              <svg class="header__icon--night">
+                <use href="./image/sprite.svg#header-night" />
+              </svg>
+              <svg class="header__icon--account">
+                <use href="./image/sprite.svg#header-account" />
+              </svg>
+            </div>
           </div>
         </div>
         <div class="top-page-content">
-          <h1 class="top-page-heading">
+          <h1 class="top-page__heading">
             Discover stays <br />
             to live, work or just relax
           </h1>
           <form>
-            <div class="top-page-form-label">
-              <label for="top-page-form-place"
+            <div class="top-page__form--label">
+              <label for="top-page__form--place"
                 >Your destination or hotel name</label
               >
-              <label for="top-page-form-date">Check-in — Check-out</label>
+              <label for="top-page__form--date">Check-in — Check-out</label>
             </div>
-            <div class="top-page-form-input">
+            <div class="top-page__form--input">
               <input
-                id="top-page-form-place"
+                id="top-page__form--place"
                 type="text"
                 placeholder="New York"
               />
               <input
-                id="top-page-form-date"
+                id="top-page__form--date"
                 type="text"
                 placeholder="Tue 15 Sept — Sat 19 Sept"
               />
               <input
-                class="top-page-form-person"
+                class="top-page__form--person"
                 type="text"
                 placeholder="2 Adults — 0 Children — 1 Room"
               />
               <input
-                class="top-page-form-button"
+                class="top-page__form--button"
                 type="button"
                 value="Search"
               />
             </div>
           </form>
-          <div class="top-page-apps-container">
-            <div class="top-page-apps-google"></div>
-            <div class="top-page-apps-store"></div>
+          <div class="top-page-apps__container">
+            <div class="top-page-apps__icon">
+              <svg class="top-page-apps__icon--google">
+                <use href="./image/sprite.svg#top-page-apps-google" />
+              </svg>
+            </div>
+            <div class="top-page-apps__icon">
+              <svg class="top-page-apps__icon--apple">
+                <use href="./image/sprite.svg#top-page-apps-store" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="advantages-container">
-      <div class="advantages-container-item">
-        <h2 class="page-heading">What do we offer</h2>
-        <hr class="line" />
+      <div class="advantages-container__item">
+        <h2 class="page__heading">What do we offer</h2>
+        <hr class="advantages__line" />
       </div>
-      <div class="advantages-content-container">
-        <div class="advantages-content-item">
-          <img src="./image/headset-mic-outlined.png" alt="support" />
-          <p>Support 24/7</p>
+      <div class="advantages-content__container">
+        <div class="advantages-content__item">
+          <svg class="advantages-content__img">
+            <use href="./image/sprite.svg#headset-mic" />
+          </svg>
+          <p class="advantages-content__title">Support 24/7</p>
         </div>
-        <div class="advantages-content-item">
-          <img src="./image/forum-outlined.png" alt="Communicate directly" />
-          <p>Communicate directly</p>
+        <div class="advantages-content__item">
+          <svg class="advantages-content__img">
+            <use href="./image/sprite.svg#forum" />
+          </svg>
+          <p class="advantages-content__title">Communicate directly</p>
         </div>
-        <div class="advantages-content-item">
-          <img src="./image/devices-outlined.png" alt="Book online" />
-          <p>Book online</p>
+        <div class="advantages-content__item">
+          <svg class="advantages-content__img">
+            <use href="./image/sprite.svg#devices" />
+          </svg>
+          <p class="advantages-content__title">Book online</p>
         </div>
-        <div class="advantages-content-item">
-          <img
-            src="./image/thumb-up-alt-outlined.png"
-            alt="Real guest reviews"
-          />
-          <p>Real guest reviews</p>
+        <div class="advantages-content__item">
+          <svg class="advantages-content__img">
+            <use href="./image/sprite.svg#thumb-up-alt" />
+          </svg>
+          <p class="advantages-content__title">Real guest reviews</p>
         </div>
       </div>
     </div>
     <div class="footer-container">
       <div class="footer-content">
-        <div class="footer-content-container">
-          <ul class="footer-content-item">
-            <li class="footer-title">About</li>
-            <li class="footer-text">How Triphouse works</li>
-            <li class="footer-text">Careers</li>
-            <li class="footer-text">Privacy</li>
-            <li class="footer-text">Terms</li>
+        <div class="footer-content__container">
+          <ul class="footer-content__item">
+            <li class="footer__title">About</li>
+            <li class="footer__text">How Triphouse works</li>
+            <li class="footer__text">Careers</li>
+            <li class="footer__text">Privacy</li>
+            <li class="footer__text">Terms</li>
           </ul>
-          <ul class="footer-content-item">
-            <li class="footer-title">Property types</li>
-            <li class="footer-text">Guest houses</li>
-            <li class="footer-text">Hotels</li>
-            <li class="footer-text">Apartments</li>
-            <li class="footer-text">Villas</li>
-            <li class="footer-text">Holiday homes</li>
-            <li class="footer-text">Hostels</li>
+          <ul class="footer-content__item">
+            <li class="footer__title">Property types</li>
+            <li class="footer__text">Guest houses</li>
+            <li class="footer__text">Hotels</li>
+            <li class="footer__text">Apartments</li>
+            <li class="footer__text">Villas</li>
+            <li class="footer__text">Holiday homes</li>
+            <li class="footer__text">Hostels</li>
           </ul>
-          <ul class="footer-content-item">
-            <li class="footer-title">Support</li>
-            <li class="footer-text">Contact Customer Service</li>
-            <li class="footer-text">FAQ</li>
+          <ul class="footer-content__item">
+            <li class="footer__title">Support</li>
+            <li class="footer__text">Contact Customer Service</li>
+            <li class="footer__text">FAQ</li>
           </ul>
         </div>
-        <div class="footer-container-item">
-          <p class="footer-copy">
+        <div class="footer-container__item">
+          <p class="footer__copy">
             &copy; 2022Triphouse, Inc. All rights reserved
           </p>
         </div>

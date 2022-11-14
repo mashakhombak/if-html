@@ -7,7 +7,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.top-section {
+.top-container {
   background-image: url(../image/castelmezzano.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -15,29 +15,28 @@
   color: #ffffff;
 }
 
-.top-section-content {
+.top-content {
   width: 1440px;
   padding: 51px 104px 0;
   margin: 0 auto;
 }
 
-.header-container {
+.header-content {
   display: flex;
   justify-content: space-between;
 }
 
-.header-logo {
-  background-image: url(../image/top-section.png);
+.header__logo {
   width: 205px;
   height: 40px;
 }
 
-.header-content-container {
+.header-content__container {
   display: flex;
   column-gap: 48px;
 }
 
-.header-content-item {
+.header-content__item {
   display: flex;
   column-gap: 24px;
   align-items: center;
@@ -45,25 +44,17 @@
   font-size: 24px;
 }
 
-.header-content-item input {
-  background-image: url(../image/top-section.png);
-  border: none;
-  background-color: unset;
-}
-
-.header-night {
-  background-position: -205px;
+.header__icon--night {
   width: 30px;
   height: 30px;
 }
 
-.header-account {
-  background-position: -235px;
+.header__icon--account {
   width: 40px;
   height: 40px;
 }
 
-.header-border {
+.header__link--border {
   padding: 12px 0;
   border-bottom: 3px solid #f5bd41;
 }
@@ -72,21 +63,21 @@
   padding: 196px 0 0;
 }
 
-.top-page-heading {
+.top-page__heading {
   font-size: 50px;
   font-weight: 500;
   width: 542px;
   margin: 0 0 100px;
 }
 
-.top-page-form-label {
+.top-page__form--label {
   display: flex;
   column-gap: 221px;
   padding: 0 0 24px 24px;
   font-size: 18px;
 }
 
-.top-page-form-input {
+.top-page__form--input {
   background-color: #ffffff;
   border: 3px solid #f3f3f4;
   border-radius: 8px;
@@ -98,7 +89,7 @@
   border-right: 0;
 }
 
-#top-page-form-place {
+#top-page__form--place {
   width: 464px;
   height: 58px;
   padding: 0 24px;
@@ -107,7 +98,7 @@
   font-weight: 400;
 }
 
-#top-page-form-date {
+#top-page__form--date {
   display: flex;
   align-items: center;
   width: 259px;
@@ -119,7 +110,7 @@
   font-weight: 400;
 }
 
-.top-page-form-person {
+.top-page__form--person {
   width: 314px;
   height: 58px;
   padding: 0 0 0 24px;
@@ -128,7 +119,7 @@
   font-weight: 400;
 }
 
-.top-page-form-button {
+.top-page__form--button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,23 +132,19 @@
   font-size: 24px;
 }
 
-.top-page-apps-container {
+.top-page-apps__container {
   display: flex;
   column-gap: 16px;
   padding: 120px 0 0;
   justify-content: center;
 }
 
-.top-page-apps-google {
-  background-image: url(../image/top-section.png);
-  background-position: -275px;
+.top-page-apps__icon--google {
   width: 135px;
   height: 40px;
 }
 
-.top-page-apps-store {
-  background-image: url(../image/top-section.png);
-  background-position: -410px;
+.top-page-apps__icon--apple {
   width: 120px;
   height: 40px;
 }
@@ -171,38 +158,46 @@
   height: 569px;
 }
 
-.advantages-container-item {
+.advantages-container__item {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
   align-items: center;
 }
 
-.page-heading {
+.page__heading {
   font-size: 40px;
   font-weight: 500;
 }
 
-.line {
+.advantages__line {
   width: 100px;
   height: 4px;
   background-color: #f5bd41;
   border: 0;
 }
 
-.advantages-content-container {
+.advantages-content__container {
   display: flex;
   column-gap: 16px;
 }
 
-.advantages-content-item {
+.advantages-content__item {
   width: 296px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 48px;
+}
+
+.advantages-content__img {
+  width: 100px;
+  height: 100px;
+}
+
+.advantages-content__title {
   font-size: 24px;
   font-weight: 400;
-  row-gap: 48px;
 }
 
 .footer-container {
@@ -220,26 +215,26 @@
   row-gap: 64px;
 }
 
-.footer-content-container {
+.footer-content__container {
   display: flex;
 }
 
-.footer-title {
+.footer__title {
   font-weight: 500;
   font-size: 20px;
 }
 
-.footer-copy {
+.footer__copy {
   font-weight: 400;
   font-size: 14px;
 }
 
-.footer-text {
+.footer__text {
   font-weight: 400;
   font-size: 20px;
 }
 
-.footer-content-item {
+.footer-content__item {
   display: flex;
   flex-direction: column;
   row-gap: 24px;

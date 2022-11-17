@@ -44,6 +44,12 @@
   font-size: 24px;
 }
 
+.header__icon--button {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
 .header__icon--night {
   width: 30px;
   height: 30px;
@@ -130,6 +136,7 @@
   border: none;
   color: #ffffff;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .top-page-apps__container {
@@ -139,12 +146,16 @@
   justify-content: center;
 }
 
-.top-page-apps__icon--google {
+.top-page-apps__link {
+  cursor: pointer;
+}
+
+.top-page-apps__link--google {
   width: 135px;
   height: 40px;
 }
 
-.top-page-apps__icon--apple {
+.top-page-apps__link--apple {
   width: 120px;
   height: 40px;
 }

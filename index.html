@@ -40,6 +40,11 @@
                   <use href="./image/sprite.svg#header-account" />
                 </svg>
               </button>
+              <button class="header__icon--button">
+                <svg class="header__icon--menu">
+                  <use href="./image/sprite.svg#header-menu" />
+                </svg>
+              </button>
             </div>
           </div>
         </header>
@@ -48,38 +53,112 @@
             Discover stays <br />
             to live, work or just relax
           </h1>
-          <form class="top-page__form">
-            <div class="top-page__input destination">
-              <input
-                type="text"
-                id="top-page__form-destination"
-                class="top-page__form-destination"
-                placeholder="New York"
-              />
-              <label for="top-page__form-destination" class="top-page__label">
-                Your destination or hotel name
-              </label>
-            </div>
-            <div class="top-page__input date">
-              <input
-                type="text"
-                id="top-page__form-date"
-                class="top-page__form-date"
-                placeholder="Tue 15 Sept — Sat 19 Sept"
-              />
-              <label for="top-page__form-date" class="top-page__label">
-                Check-in — Check-out
-              </label>
-            </div>
-            <div class="top-page__input option">
-              <input
-                type="text"
-                class="top-page__form-option"
-                placeholder="2 Adults — 0 Children — 1 Room"
-              />
-            </div>
-            <button class="top-page__button">Search</button>
-          </form>
+          <div class="top-page__form-container">
+            <form class="top-page__form-md">
+              <div class="top-page__input destination">
+                <input
+                  type="text"
+                  id="top-page__form-destination"
+                  class="top-page__form-destination"
+                  placeholder="New York"
+                />
+                <label for="top-page__form-destination" class="top-page__label">
+                  Your destination or hotel name
+                </label>
+              </div>
+              <div class="top-page__input date">
+                <input
+                  type="text"
+                  id="top-page__form-date"
+                  class="top-page__form-date"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                />
+                <label for="top-page__form-date" class="top-page__label">
+                  Check-in — Check-out
+                </label>
+              </div>
+              <div class="top-page__input option">
+                <input
+                  type="text"
+                  class="top-page__form-option"
+                  placeholder="2 Adults — 0 Children — 1 Room"
+                />
+              </div>
+              <button class="top-page__button">Search</button>
+            </form>
+            <form class="top-page__form-sm">
+              <div class="top-page__input-sm">
+                <svg class="top-page__logo-search">
+                  <use href="./image/sprite.svg#logo-search" />
+                </svg>
+                <input
+                  type="text"
+                  class="top-page__destination-sm"
+                  placeholder="Your destination or hotel name"
+                />
+              </div>
+              <div class="top-page__input-sm">
+                <input
+                  type="text"
+                  id="top-page__check-in-sm"
+                  class="top-page__check-sm"
+                  placeholder="Tue 15 Sept 2020"
+                />
+                <label for="top-page__check-in-sm" class="top-page__label-sm">
+                  Check-in date
+                </label>
+              </div>
+              <div class="top-page__input-sm">
+                <input
+                  type="text"
+                  id="top-page__check-out-sm"
+                  class="top-page__check-sm"
+                  placeholder="Sat 19 Sept 2020"
+                />
+                <label for="top-page__check-out-sm" class="top-page__label-sm">
+                  Check-out date
+                </label>
+              </div>
+              <div class="top-page__input-option-sm">
+                <div class="top-page__input-sm">
+                  <input
+                    type="text"
+                    id="top-page__adults-sm"
+                    class="top-page__option-sm"
+                    placeholder="2"
+                  />
+                  <label for="top-page__adults-sm" class="top-page__label-sm">
+                    Adults
+                  </label>
+                  <div class="top-page__input-line"></div>
+                </div>
+                <div class="top-page__input-sm">
+                  <input
+                    type="text"
+                    id="top-page__children-sm"
+                    class="top-page__option-sm"
+                    placeholder="0"
+                  />
+                  <label for="top-page__children-sm" class="top-page__label-sm">
+                    Children
+                  </label>
+                  <div class="top-page__input-line"></div>
+                </div>
+                <div class="top-page__input-sm">
+                  <input
+                    type="text"
+                    id="top-page__rooms-sm"
+                    class="top-page__option-sm"
+                    placeholder="1"
+                  />
+                  <label for="top-page__rooms-sm" class="top-page__label-sm">
+                    Rooms
+                  </label>
+                </div>
+              </div>
+              <button class="top-page__button-sm">Search</button>
+            </form>
+          </div>
           <div class="top-page-apps__container">
             <a class="top-page-apps__link">
               <svg class="top-page-apps__link--google">

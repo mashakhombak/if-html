@@ -17,13 +17,16 @@
   <body>
     <div class="top-container">
       <div class="top-content">
-        <div class="header-content">
+        <header class="header-content">
           <svg class="header__logo">
             <use href="./image/sprite.svg#header-logo" />
           </svg>
           <div class="header-content__container">
             <div class="header-content__item">
-              <a class="header__link--border">Stays</a>
+              <div class="header__link">
+                <a>Stays</a>
+                <hr class="header__line" />
+              </div>
               <a class="header__link">Attractions</a>
             </div>
             <div class="header-content__item">
@@ -37,44 +40,128 @@
                   <use href="./image/sprite.svg#header-account" />
                 </svg>
               </button>
+              <button class="header__icon--button">
+                <svg class="header__icon--menu">
+                  <use href="./image/sprite.svg#header-menu" />
+                </svg>
+              </button>
             </div>
           </div>
-        </div>
+        </header>
         <div class="top-page-content">
           <h1 class="top-page__heading">
             Discover stays <br />
             to live, work or just relax
           </h1>
-          <form>
-            <div class="top-page__form--label">
-              <label for="top-page__form--place">
-                Your destination or hotel name
-              </label>
-              <label for="top-page__form--date">Check-in — Check-out</label>
-            </div>
-            <div class="top-page__form--input">
-              <input
-                id="top-page__form--place"
-                type="text"
-                placeholder="New York"
-              />
-              <input
-                id="top-page__form--date"
-                type="text"
-                placeholder="Tue 15 Sept — Sat 19 Sept"
-              />
-              <input
-                class="top-page__form--person"
-                type="text"
-                placeholder="2 Adults — 0 Children — 1 Room"
-              />
-              <input
-                class="top-page__form--button"
-                type="button"
-                value="Search"
-              />
-            </div>
-          </form>
+          <div class="top-page__form-container">
+            <form class="top-page__form-md">
+              <div class="top-page__input-md destination">
+                <input
+                  type="text"
+                  id="top-page__form-destination-md"
+                  class="top-page__form-destination-md"
+                  placeholder="New York"
+                />
+                <label
+                  for="top-page__form-destination-md"
+                  class="top-page__label-md"
+                >
+                  Your destination or hotel name
+                </label>
+              </div>
+              <div class="top-page__input-md date">
+                <input
+                  type="text"
+                  id="top-page__form-date-md"
+                  class="top-page__form-date-md"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                />
+                <label for="top-page__form-date-md" class="top-page__label-md">
+                  Check-in — Check-out
+                </label>
+              </div>
+              <div class="top-page__input-md option">
+                <input
+                  type="text"
+                  class="top-page__form-option-md"
+                  placeholder="2 Adults — 0 Children — 1 Room"
+                />
+              </div>
+              <button class="top-page__button-md">Search</button>
+            </form>
+            <form class="top-page__form-xs">
+              <div class="top-page__input-destination-xs">
+                <svg class="top-page__logo-search">
+                  <use href="./image/sprite.svg#logo-search" />
+                </svg>
+                <input
+                  type="text"
+                  class="top-page__destination-xs"
+                  placeholder="Your destination or hotel name"
+                />
+              </div>
+              <div class="top-page__input-check-xs">
+                <input
+                  type="text"
+                  id="top-page__check-in-xs"
+                  class="top-page__check-xs"
+                  placeholder="Tue 15 Sept 2020"
+                />
+                <label for="top-page__check-in-xs" class="top-page__label-xs">
+                  Check-in date
+                </label>
+              </div>
+              <div class="top-page__input-check-xs">
+                <input
+                  type="text"
+                  id="top-page__check-out-xs"
+                  class="top-page__check-xs"
+                  placeholder="Sat 19 Sept 2020"
+                />
+                <label for="top-page__check-out-xs" class="top-page__label-xs">
+                  Check-out date
+                </label>
+              </div>
+              <div class="top-page__input-option-xs">
+                <div class="top-page__input-xs">
+                  <input
+                    type="text"
+                    id="top-page__adults-xs"
+                    class="top-page__option-xs"
+                    placeholder="2"
+                  />
+                  <label for="top-page__adults-xs" class="top-page__label-xs">
+                    Adults
+                  </label>
+                  <div class="top-page__input-line"></div>
+                </div>
+                <div class="top-page__input-xs">
+                  <input
+                    type="text"
+                    id="top-page__children-xs"
+                    class="top-page__option-xs"
+                    placeholder="0"
+                  />
+                  <label for="top-page__children-xs" class="top-page__label-xs">
+                    Children
+                  </label>
+                  <div class="top-page__input-line"></div>
+                </div>
+                <div class="top-page__input-xs">
+                  <input
+                    type="text"
+                    id="top-page__rooms-xs"
+                    class="top-page__option-xs"
+                    placeholder="1"
+                  />
+                  <label for="top-page__rooms-xs" class="top-page__label-xs">
+                    Rooms
+                  </label>
+                </div>
+              </div>
+              <button class="top-page__button-xs">Search</button>
+            </form>
+          </div>
           <div class="top-page-apps__container">
             <a class="top-page-apps__link">
               <svg class="top-page-apps__link--google">
@@ -91,60 +178,67 @@
       </div>
     </div>
     <div class="advantages-container">
-      <div class="advantages-container__item">
-        <h2 class="page__heading">What do we offer</h2>
-        <hr class="advantages__line" />
-      </div>
-      <div class="advantages-content__container">
-        <div class="advantages-content__item">
-          <svg class="advantages-content__img">
-            <use href="./image/sprite.svg#headset-mic" />
-          </svg>
-          <p class="advantages-content__title">Support 24/7</p>
+      <div class="advantages-content">
+        <div class="advantages-container__item">
+          <h2 class="page__heading">What do we offer</h2>
+          <hr class="advantages__line" />
         </div>
-        <div class="advantages-content__item">
-          <svg class="advantages-content__img">
-            <use href="./image/sprite.svg#forum" />
-          </svg>
-          <p class="advantages-content__title">Communicate directly</p>
-        </div>
-        <div class="advantages-content__item">
-          <svg class="advantages-content__img">
-            <use href="./image/sprite.svg#devices" />
-          </svg>
-          <p class="advantages-content__title">Book online</p>
-        </div>
-        <div class="advantages-content__item">
-          <svg class="advantages-content__img">
-            <use href="./image/sprite.svg#thumb-up-alt" />
-          </svg>
-          <p class="advantages-content__title">Real guest reviews</p>
+        <div class="advantages-content__container">
+          <div class="advantages-content__item">
+            <svg class="advantages-content__img">
+              <use href="./image/sprite.svg#headset-mic" />
+            </svg>
+            <p class="advantages-content__title">Support 24/7</p>
+          </div>
+          <div class="advantages-content__item">
+            <svg class="advantages-content__img">
+              <use href="./image/sprite.svg#forum" />
+            </svg>
+            <p class="advantages-content__title">Communicate directly</p>
+          </div>
+          <div class="advantages-content__item">
+            <svg class="advantages-content__img">
+              <use href="./image/sprite.svg#devices" />
+            </svg>
+            <p class="advantages-content__title">Book online</p>
+          </div>
+          <div class="advantages-content__item">
+            <svg class="advantages-content__img">
+              <use href="./image/sprite.svg#thumb-up-alt" />
+            </svg>
+            <p class="advantages-content__title">Real guest reviews</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-container">
+    <footer class="footer-container">
       <div class="footer-content">
+        <div class="footer-content__logo">
+          <svg class="footer-content__img">
+            <use href="./image/sprite.svg#footer-logo" />
+          </svg>
+        </div>
         <div class="footer-content__container">
           <ul class="footer-content__item">
             <li class="footer__title">About</li>
-            <li class="footer__text">How Triphouse works</li>
-            <li class="footer__text">Careers</li>
-            <li class="footer__text">Privacy</li>
-            <li class="footer__text">Terms</li>
+            <li class="footer__text"><a>How Triphouse works</a></li>
+            <li class="footer__text"><a>Careers</a></li>
+            <li class="footer__text"><a>Privacy</a></li>
+            <li class="footer__text"><a>Terms</a></li>
           </ul>
-          <ul class="footer-content__item">
+          <ul class="footer-content__item footer-property">
             <li class="footer__title">Property types</li>
-            <li class="footer__text">Guest houses</li>
-            <li class="footer__text">Hotels</li>
-            <li class="footer__text">Apartments</li>
-            <li class="footer__text">Villas</li>
-            <li class="footer__text">Holiday homes</li>
-            <li class="footer__text">Hostels</li>
+            <li class="footer__text"><a>Guest houses</a></li>
+            <li class="footer__text"><a>Hotels</a></li>
+            <li class="footer__text"><a>Apartments</a></li>
+            <li class="footer__text"><a>Villas</a></li>
+            <li class="footer__text"><a>Holiday homes</a></li>
+            <li class="footer__text"><a>Hostels</a></li>
           </ul>
           <ul class="footer-content__item">
             <li class="footer__title">Support</li>
-            <li class="footer__text">Contact Customer Service</li>
-            <li class="footer__text">FAQ</li>
+            <li class="footer__text"><a>Contact Customer Service</a></li>
+            <li class="footer__text"><a>FAQ</a></li>
           </ul>
         </div>
         <div class="footer-container__item">
@@ -153,6 +247,6 @@
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

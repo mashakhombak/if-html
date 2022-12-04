@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./styles/fonts.css" />
   </head>
   <body>
-    <div class="top-container">
+    <section class="top-container">
       <div class="top-content">
         <header class="header-content">
           <svg class="header__logo">
@@ -45,7 +45,7 @@
             </div>
           </div>
         </header>
-        <div class="top-page-content">
+        <section class="top-page-content">
           <h1 class="top-page__heading">
             Discover stays <br />
             to live, work or just relax
@@ -171,13 +171,13 @@
               </svg>
             </a>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
-    <div class="advantages-container">
+    </section>
+    <section class="advantages-container">
       <div class="advantages-content">
         <div class="advantages-container__item">
-          <h2 class="page__heading">What do we offer</h2>
+          <h2 class="advantages__heading page__heading">What do we offer</h2>
         </div>
         <div class="advantages-content__container">
           <div class="advantages-content__item">
@@ -206,44 +206,160 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="homes-container">
+    </section>
+    <section class="homes-container">
       <div class="homes-content">
-        <h2 class="homes__heading">Homes guests loves</h2>
+        <h2 class="homes__heading page__heading">Homes guests loves</h2>
         <div class="homes-content__container">
           <div class="homes-content__item">
-            <img class="homes-content__img" src="./image/Leopold.png" />
-            <h3 class="homes-content__place">Hotel Leopold</h3>
+            <img
+              class="homes-content__img page-content__img"
+              src="./image/Leopold.png"
+              alt="Hotel Leopold"
+            />
+            <h3 class="homes-content__place page-content__place">
+              Hotel Leopold
+            </h3>
             <p class="homes-content__address">Saint Petersburg, Russia</p>
           </div>
           <div class="homes-content__item">
-            <img class="homes-content__img" src="./image/Sunshine.png" />
-            <h3 class="homes-content__place">Apartment Sunshine</h3>
+            <img
+              class="homes-content__img page-content__img"
+              src="./image/Sunshine.png"
+              alt="Apartment Sunshine"
+            />
+            <h3 class="homes-content__place page-content__place">
+              Apartment Sunshine
+            </h3>
             <p class="homes-content__address">Santa Cruz de Tenerife, Spain</p>
           </div>
           <div class="homes-content__item tatry">
-            <img class="homes-content__img" src="./image/Kunerad.png" />
-            <h3 class="homes-content__place">Villa Kunerad</h3>
+            <img
+              class="homes-content__img page-content__img"
+              src="./image/Kunerad.png"
+              alt="Villa Kunerad"
+            />
+            <h3 class="homes-content__place page-content__place">
+              Villa Kunerad
+            </h3>
             <p class="homes-content__address">Vysokie Tatry, Slowakia</p>
           </div>
           <div class="homes-content__item berlin">
-            <img class="homes-content__img" src="./image/Friendship.png" />
-            <h3 class="homes-content__place">Hostel Friendship</h3>
+            <img
+              class="homes-content__img page-content__img"
+              src="./image/Friendship.png"
+              alt="Hostel Friendship"
+            />
+            <h3 class="homes-content__place page-content__place">
+              Hostel Friendship
+            </h3>
             <p class="homes-content__address">Berlin, Germany</p>
           </div>
-          <div class="homes-content__circle">
-            <svg class="homes-content__arrow">
-              <use href="./image/sprite.svg#homes-arrow" />
+          <div class="homes-content__circle page-content__circle">
+            <svg class="homes-content__arrow page-content__arrow">
+              <use href="./image/sprite.svg#page-arrow" />
             </svg>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="destination-container">
+      <div class="destination-content">
+        <h2 class="destination-header page__heading">The best destinations</h2>
+        <div class="destination-content__container">
+          <div class="destination-content__buttons">
+            <button class="destination__button regions">Regions</button>
+            <button class="destination__button cities">Cities</button>
+            <button class="destination__button places">Places</button>
+          </div>
+          <div class="destination-content__items">
+            <div class="destination-content__item maldives">
+              <img
+                class="destination-content__img page-content__img"
+                src="./image/maldives.png"
+                alt="Maldives"
+              />
+              <div class="destination-content__button">
+                <button class="button-booking">Book now</button>
+              </div>
+              <h3 class="destination-content__place page-content__place">
+                Maldives
+              </h3>
+            </div>
+            <div class="destination-content__item spain">
+              <img
+                class="destination-content__img page-content__img"
+                src="./image/spain.png"
+                alt="Spain"
+              />
+              <h3 class="destination-content__place page-content__place">
+                Spain
+              </h3>
+            </div>
+            <div class="destination-content__item norway">
+              <img
+                class="destination-content__img page-content__img"
+                src="./image/norway.png"
+                alt="Norway"
+              />
+              <h3 class="destination-content__place page-content__place">
+                Norway
+              </h3>
+            </div>
+            <div class="destination-content__item island">
+              <img
+                class="destination-content__img page-content__img"
+                src="./image/island.png"
+                alt="Island"
+              />
+              <h3 class="destination-content__place page-content__place">
+                Island
+              </h3>
+            </div>
+          </div>
+          <div class="destination-content__circle-xs page-content__circle">
+            <svg class="destination-content__arrow-xs page-content__arrow">
+              <use href="./image/sprite.svg#page-arrow" />
+            </svg>
+          </div>
+        </div>
+        <div class="destination-content__circle-md page-content__circle">
+          <svg class="destination-content__arrow-md page-content__arrow">
+            <use href="./image/sprite.svg#page-arrow" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="sing-up-container">
+      <div class="sing-up-content">
+        <svg class="sing-up__closing-cross">
+          <use href="./image/sprite.svg#closing-cross" />
+        </svg>
+        <div class="sing-up__profile">
+          <svg class="sing-up__icon-profile">
+            <use href="./image/sprite.svg#icon-profile" />
+          </svg>
+        </div>
+        <div class="sing-up__logo">
+          <svg class="sing-up__logo-white">
+            <use href="./image/sprite.svg#page-logo-white" />
+          </svg>
+        </div>
+        <div class="sing-up__item">
+          <p class="sing-up__text">
+            Sign up <span class="sing-up__text-xs">in the app</span> and get 20%
+            off your first booking
+          </p>
+          <button class="sing-up__button-md">Sign up</button>
+        </div>
+        <button class="sing-up__button-xs">Install</button>
+      </div>
+    </section>
     <footer class="footer-container">
       <div class="footer-content">
         <div class="footer-content__logo">
           <svg class="footer-content__img">
-            <use href="./image/sprite.svg#footer-logo" />
+            <use href="./image/sprite.svg#page-logo-white" />
           </svg>
         </div>
         <div class="footer-content__container">

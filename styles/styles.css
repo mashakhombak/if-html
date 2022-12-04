@@ -7,6 +7,8 @@
   --general-blue: #10367c;
   --text-color-main: #383838;
   --accent-blue: #3077c6;
+  --bg-color-main: #eaf0f9;
+  --secondary-text: #bfbfbf;
 }
 
 * {
@@ -21,6 +23,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  min-height: 900px;
   color: var(--general-white);
 }
 
@@ -50,6 +53,22 @@
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
+  animation: header-link-animation 250ms ease-in-out;
+}
+
+@keyframes header-link-animation {
+  50% {
+    width: 25px;
+  }
+  80% {
+    width: 40px;
+  }
+  100% {
+    width: 50px;
+  }
+  0% {
+    width: 0;
+  }
 }
 
 .header__logo {
@@ -84,6 +103,7 @@
 .header__icon--account {
   width: 40px;
   height: 40px;
+  margin: 0 -24px 0 0;
 }
 
 .header__icon--menu {
@@ -210,7 +230,7 @@
   font-weight: 500;
 }
 
-.page__heading:after {
+.advantages__heading:after {
   content: "";
   display: inline-block;
   width: 100px;
@@ -250,7 +270,7 @@
 }
 
 .homes-container {
-  background-color: #eaf0f9;
+  background-color: var(--bg-color-main);
   margin: 0 auto;
 }
 
@@ -260,11 +280,6 @@
   flex-direction: column;
   align-items: center;
   row-gap: 106px;
-}
-
-.homes__heading {
-  font-size: 40px;
-  font-weight: 500;
 }
 
 .homes-content__container {
@@ -279,31 +294,37 @@
   row-gap: 24px;
 }
 
-.homes-content__img {
+.page-content__img {
   height: 296px;
   width: 296px;
 }
 
-.homes-content__place {
+.page-content__place {
   font-size: 24px;
   font-weight: 400;
-  color: #3077c6;
+  color: var(--accent-blue);
 }
 
 .homes-content__address {
   font-size: 24px;
   font-weight: 400;
-  color: #bfbfbf;
+  color: var(--secondary-text);
   max-width: 295px;
 }
 
-.homes-content__circle {
+.page-content__circle {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: #f3f3f4;
+  background-color: var(--stroke-color-main);
   display: flex;
   justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.homes-content__circle {
   align-items: center;
   position: absolute;
   right: -20px;
@@ -311,9 +332,195 @@
   transform: translateY(-50%);
 }
 
-.homes-content__arrow {
+.page-content__arrow {
   width: 7px;
   height: 19px;
+}
+
+.destination-container {
+  max-width: 1264px;
+  padding: 120px 104px 0;
+  margin: 0 auto;
+}
+
+.destination-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-header {
+  padding: 0 0 104px;
+}
+
+.destination-content__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 66px;
+}
+
+.destination-content__buttons {
+  display: flex;
+  justify-content: left;
+  background-color: var(--stroke-color-main);
+  border-radius: 8px;
+  max-width: 622px;
+  width: 100%;
+}
+
+.destination__button {
+  height: 64px;
+  border: none;
+  background-color: unset;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.destination__button:focus {
+  outline: none;
+  border-radius: 8px;
+  background-color: var(--accent-blue);
+}
+
+.regions {
+  max-width: 192px;
+  width: 100%;
+}
+
+.cities {
+  max-width: 192px;
+  width: 100%;
+}
+
+.places {
+  max-width: 238px;
+  width: 100%;
+}
+
+.places:after {
+  content: "of interest";
+}
+
+.destination-content__items {
+  display: flex;
+  column-gap: 16px;
+  justify-content: flex-start;
+}
+
+.destination-content__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.maldives {
+  position: relative;
+}
+
+.destination-content__button {
+  position: absolute;
+  background-color: rgba(56, 56, 56, 0.4);
+  height: 296px;
+  width: 296px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-booking {
+  width: 128px;
+  height: 48px;
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.destination-content__circle-xs {
+  display: none;
+}
+
+.destination-content__circle-md {
+  margin: 48px 0 120px;
+}
+
+.destination-content__arrow-md {
+  transform: rotate(90deg);
+}
+
+.sing-up-content {
+  max-width: 1232px;
+  background-color: var(--bg-color-main);
+  margin: 0 auto;
+  padding: 51px 24px;
+  display: flex;
+  column-gap: 24px;
+  position: relative;
+}
+
+.sing-up__profile {
+  width: 86px;
+  height: 86px;
+  background-color: var(--general-white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sing-up__icon-profile {
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.sing-up__logo {
+  display: none;
+}
+
+.sing-up__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+}
+
+.sing-up__text {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color-main);
+}
+
+.sing-up__text-xs {
+  display: none;
+}
+
+.sing-up__button-md {
+  height: 48px;
+  width: 128px;
+  border: 1px solid var(--accent-blue);
+  border-radius: 8px;
+  background-color: var(--general-white);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--accent-blue);
+  cursor: pointer;
+}
+
+.sing-up__button-xs {
+  display: none;
+}
+
+.sing-up__closing-cross {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
 .footer-container {
@@ -365,10 +572,18 @@
   .berlin {
     display: none;
   }
+
+  .island {
+    display: none;
+  }
 }
 
 @media (max-width: 980px) {
   .tatry {
+    display: none;
+  }
+
+  .norway {
     display: none;
   }
 }
@@ -376,6 +591,10 @@
 @media (max-width: 768px) {
   .header-content {
     padding: 0 0 120px;
+  }
+
+  .header__icon--account {
+    margin: 0;
   }
 
   .top-page__heading {
@@ -387,7 +606,7 @@
   }
 
   .header__icon--menu {
-    display: flex;
+    display: block;
     height: 50px;
     width: 50px;
   }
@@ -407,20 +626,29 @@
     width: 80%;
   }
 
+  .advantages-content__img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .advantages-content__title {
+    font-size: 16px;
+  }
+
   .homes-content {
     row-gap: 54px;
   }
 
-  .homes__heading {
+  .page__heading {
     font-size: 34px;
   }
 
-  .homes-content__img {
-    height: 226px;
-    width: 226px;
+  .page-content__img {
+    height: 200px;
+    width: 200px;
   }
 
-  .homes-content__place {
+  .page-content__place {
     font-size: 14px;
   }
 
@@ -428,10 +656,38 @@
     font-size: 14px;
   }
 
+  .page-content__circle {
+    height: 28px;
+    width: 28px;
+  }
+
+  .page-content__arrow {
+    height: 13px;
+    width: 5px;
+  }
+
   .homes-content__circle {
-    top: 113px;
-    right: -20px;
+    top: 100px;
+    right: -14px;
     transform: translateY(-50%);
+  }
+
+  .destination__button {
+    font-size: 16px;
+  }
+
+  .destination-content__button {
+    height: 200px;
+    width: 200px;
+  }
+
+  .button-booking {
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .sing-up__profile {
+    aspect-ratio: 1/1;
   }
 
   .footer-content {
@@ -453,7 +709,7 @@
 
 @media (max-width: 480px) {
   .top-container {
-    height: 533px;
+    max-height: 533px;
   }
 
   .top-content {
@@ -582,7 +838,7 @@
   .top-page__input-line {
     width: 1px;
     height: 30px;
-    background-color: #bfbfbf;
+    background-color: var(--secondary-text);
     position: absolute;
     top: 8px;
     left: 99%;
@@ -602,6 +858,7 @@
     font-weight: 500;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
   }
 
   .top-page-apps__container {
@@ -616,43 +873,11 @@
     row-gap: 32px;
   }
 
-  .homes-content {
-    padding: 40px 17px;
-    row-gap: 32px;
-  }
-
-  .homes__heading {
-    font-size: 28px;
-  }
-
-  .homes-content__item {
-    row-gap: 6px;
-  }
-
-  .homes-content__img {
-    height: 156px;
-    width: 156px;
-  }
-
-  .homes-content__place {
-    font-size: 12px;
-  }
-
-  .homes-content__address {
-    font-size: 12px;
-  }
-
-  .homes-content__circle {
-    top: 78px;
-    right: -20px;
-    transform: translateY(-50%);
-  }
-
   .page__heading {
     font-size: 28px;
   }
 
-  .page__heading:after {
+  .advantages__heading:after {
     display: none;
   }
 
@@ -673,6 +898,150 @@
   .advantages-content__img {
     height: 70px;
     width: 70px;
+  }
+
+  .homes-content {
+    padding: 40px 17px;
+    row-gap: 32px;
+  }
+
+  .homes-content__item {
+    row-gap: 6px;
+  }
+
+  .page-content__img {
+    height: 156px;
+    width: 156px;
+  }
+
+  .homes-content__place {
+    font-size: 12px;
+  }
+
+  .homes-content__address {
+    font-size: 12px;
+  }
+
+  .page-content__circle {
+    height: 28px;
+    width: 28px;
+  }
+
+  .page-content__arrow {
+    height: 13px;
+    width: 5px;
+  }
+
+  .homes-content__circle {
+    top: 72px;
+    right: -10px;
+    transform: translateY(-50%);
+  }
+
+  .destination-container {
+    padding: 40px 17px;
+  }
+
+  .destination-content__container {
+    position: relative;
+    row-gap: 24px;
+  }
+
+  .destination-header {
+    padding: 0 0 32px;
+  }
+
+  .destination-content__buttons {
+    background-color: unset;
+    justify-content: space-between;
+  }
+
+  .places:after {
+    content: "";
+  }
+
+  .destination__button {
+    width: 98px;
+    height: 32px;
+    border: 1px solid var(--stroke-color-main);
+    border-radius: 4px;
+    font-size: 19px;
+  }
+
+  .destination-content__item {
+    row-gap: 8px;
+  }
+
+  .destination-content__button {
+    display: none;
+  }
+
+  .destination-content__circle-xs {
+    display: flex;
+    position: absolute;
+    right: -12px;
+    top: 120px;
+  }
+
+  .destination-content__circle-md {
+    display: none;
+  }
+
+  .sing-up-content {
+    align-items: center;
+    column-gap: 16px;
+    padding: 24px 16px;
+    justify-content: space-between;
+  }
+
+  .sing-up__profile {
+    display: none;
+  }
+
+  .sing-up__logo {
+    display: flex;
+    height: 58px;
+    width: 58px;
+    border-radius: 4px;
+    background-color: var(--accent-blue);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sing-up__logo-white {
+    width: 53px;
+    height: 10px;
+  }
+
+  .sing-up__text {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .sing-up__text-xs {
+    display: inline-block;
+  }
+
+  .sing-up__button-md {
+    display: none;
+  }
+
+  .sing-up__button-xs {
+    display: block;
+    width: 41px;
+    height: 16px;
+    background-color: unset;
+    border: none;
+    color: var(--accent-blue);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .sing-up__closing-cross {
+    width: 16px;
+    height: 16px;
+    position: static;
   }
 
   .footer-content {
@@ -700,6 +1069,8 @@
   .footer__title {
     font-size: 15px;
     border-bottom: 1px solid var(--general-white);
+    margin: 0 -16px 0 0;
+    cursor: pointer;
   }
 
   .footer__text {

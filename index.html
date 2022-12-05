@@ -51,13 +51,14 @@
             to live, work or just relax
           </h1>
           <div class="top-page__form-container">
-            <form class="top-page__form-md">
+            <form class="top-page__form-md" action="/" method="get">
               <div class="top-page__input-md destination">
                 <input
                   type="text"
                   id="top-page__form-destination-md"
                   class="top-page__form-destination-md"
                   placeholder="New York"
+                  name="destination"
                 />
                 <label
                   for="top-page__form-destination-md"
@@ -72,6 +73,7 @@
                   id="top-page__form-date-md"
                   class="top-page__form-date-md"
                   placeholder="Tue 15 Sept — Sat 19 Sept"
+                  name="date"
                 />
                 <label for="top-page__form-date-md" class="top-page__label-md">
                   Check-in — Check-out
@@ -82,11 +84,12 @@
                   type="text"
                   class="top-page__form-option-md"
                   placeholder="2 Adults — 0 Children — 1 Room"
+                  name="option"
                 />
               </div>
               <button class="top-page__button-md">Search</button>
             </form>
-            <form class="top-page__form-xs">
+            <form class="top-page__form-xs" action="/" method="get">
               <div class="top-page__input-destination-xs">
                 <svg class="top-page__logo-search">
                   <use href="./image/sprite.svg#logo-search" />
@@ -95,6 +98,7 @@
                   type="text"
                   class="top-page__destination-xs"
                   placeholder="Your destination or hotel name"
+                  name="destination"
                 />
               </div>
               <div class="top-page__input-check-xs">
@@ -103,6 +107,7 @@
                   id="top-page__check-in-xs"
                   class="top-page__check-xs"
                   placeholder="Tue 15 Sept 2020"
+                  name="check-in"
                 />
                 <label for="top-page__check-in-xs" class="top-page__label-xs">
                   Check-in date
@@ -114,6 +119,7 @@
                   id="top-page__check-out-xs"
                   class="top-page__check-xs"
                   placeholder="Sat 19 Sept 2020"
+                  name="check-out"
                 />
                 <label for="top-page__check-out-xs" class="top-page__label-xs">
                   Check-out date
@@ -126,6 +132,7 @@
                     id="top-page__adults-xs"
                     class="top-page__option-xs"
                     placeholder="2"
+                    name="adults"
                   />
                   <label for="top-page__adults-xs" class="top-page__label-xs">
                     Adults
@@ -138,6 +145,7 @@
                     id="top-page__children-xs"
                     class="top-page__option-xs"
                     placeholder="0"
+                    name="children"
                   />
                   <label for="top-page__children-xs" class="top-page__label-xs">
                     Children
@@ -150,6 +158,7 @@
                     id="top-page__rooms-xs"
                     class="top-page__option-xs"
                     placeholder="1"
+                    name="rooms"
                   />
                   <label for="top-page__rooms-xs" class="top-page__label-xs">
                     Rooms
@@ -265,7 +274,7 @@
     </section>
     <section class="destination-container">
       <div class="destination-content">
-        <h2 class="destination-header page__heading">The best destinations</h2>
+        <h2 class="destination-heading page__heading">The best destinations</h2>
         <div class="destination-content__container">
           <div class="destination-content__buttons">
             <button class="destination__button regions">Regions</button>
@@ -330,30 +339,165 @@
         </div>
       </div>
     </section>
-    <section class="sing-up-container">
-      <div class="sing-up-content">
-        <svg class="sing-up__closing-cross">
-          <use href="./image/sprite.svg#closing-cross" />
-        </svg>
-        <div class="sing-up__profile">
-          <svg class="sing-up__icon-profile">
-            <use href="./image/sprite.svg#icon-profile" />
+    <section class="sing-up-reviews-container">
+      <section class="sing-up-container">
+        <div class="sing-up-content">
+          <svg class="sing-up__closing-cross">
+            <use href="./image/sprite.svg#closing-cross" />
           </svg>
+          <div class="sing-up__profile">
+            <svg class="sing-up__icon-profile">
+              <use href="./image/sprite.svg#icon-profile" />
+            </svg>
+          </div>
+          <div class="sing-up__logo">
+            <svg class="sing-up__logo-white">
+              <use href="./image/sprite.svg#page-logo-white" />
+            </svg>
+          </div>
+          <div class="sing-up__item">
+            <p class="sing-up__text">
+              Sign up <span class="sing-up__text-xs">in the app</span> and get
+              20% off your first booking
+            </p>
+            <button class="sing-up__button-md">Sign up</button>
+          </div>
+          <button class="sing-up__button-xs">Install</button>
         </div>
-        <div class="sing-up__logo">
-          <svg class="sing-up__logo-white">
-            <use href="./image/sprite.svg#page-logo-white" />
-          </svg>
+      </section>
+      <section class="reviews-container">
+        <div class="reviews-content">
+          <h2 class="reviews-heading page__heading">Guests reviews</h2>
+          <div class="reviews-content__container">
+            <div class="reviews-content__item bali">
+              <div class="reviews-content__img">
+                <img class="reviews-img" src="./image/bali.png" alt="Bali" />
+                <p class="reviews-price">From 250 USD</p>
+              </div>
+              <div class="reviews-content__info">
+                <div class="reviews-content__hotel">
+                  <div class="reviews-hotel">
+                    <p class="hotel-name">Ubud Bali Resort&amp;SPA</p>
+                    <p class="hotel-place">Bali, Indonesia</p>
+                  </div>
+                  <div class="reviews-rating">
+                    <p class="rating">9,4</p>
+                    <p class="number-reviews">1324 reviews</p>
+                  </div>
+                </div>
+                <div class="reviews-content__review">
+                  <div class="review-person">
+                    <svg class="review-person__icon">
+                      <use href="./image/sprite.svg#review-person-icon" />
+                    </svg>
+                    <div class="review-person-info">
+                      <p class="person-name">Hanna Ivanova</p>
+                      <p class="person-country">🇺🇦 Ukraine</p>
+                    </div>
+                  </div>
+                  <p class="reviews-text">
+                    Great location, really pleasant and clean rooms, but the
+                    thing that makes this such a good place to stay are the
+                    staff. All of the people are incredibly helpful and generous
+                    with their time and advice.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-content__item rotterdam">
+              <div class="reviews-content__img">
+                <img
+                  class="reviews-img"
+                  src="./image/rotterdam.png"
+                  alt="Rotterdam"
+                />
+                <p class="reviews-price">From 40 USD</p>
+              </div>
+              <div class="reviews-content__info">
+                <div class="reviews-content__hotel">
+                  <div class="reviews-hotel">
+                    <p class="hotel-name">King Kong Hostel</p>
+                    <p class="hotel-place">Rotterdam, Netherlands</p>
+                  </div>
+                  <div class="reviews-rating">
+                    <p class="rating">8,9</p>
+                    <p class="number-reviews">2016 reviews</p>
+                  </div>
+                </div>
+                <div class="reviews-content__review">
+                  <div class="review-person">
+                    <svg class="review-person__icon">
+                      <use href="./image/sprite.svg#review-person-icon" />
+                    </svg>
+                    <div class="review-person-info">
+                      <p class="person-name">Adam Smith</p>
+                      <p class="person-country">🇺🇸 USA</p>
+                    </div>
+                  </div>
+                  <p class="reviews-text">
+                    I've been in this hostel for a month and here is the best
+                    hostel of all Excellent management of excellent and ethical
+                    staff and bedrooms Bathrooms are always clean and excellent
+                    Most importantly, those who work here are kind and
+                    good-natured.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-content__item ourika">
+              <div class="reviews-content__img">
+                <img
+                  class="reviews-img"
+                  src="./image/ourika.png"
+                  alt="Ourika"
+                />
+                <p class="reviews-price">From 100 USD</p>
+                <div class="reviews-content__circle page-content__circle">
+                  <svg class="reviews-content__arrow page-content__arrow">
+                    <use href="./image/sprite.svg#page-arrow" />
+                  </svg>
+                </div>
+              </div>
+              <div class="reviews-content__info">
+                <div class="reviews-content__hotel">
+                  <div class="reviews-hotel">
+                    <p class="hotel-name">Rokoko Hotel</p>
+                    <p class="hotel-place">Ourika, Marocco</p>
+                  </div>
+                  <div class="reviews-rating">
+                    <p class="rating">9,1</p>
+                    <p class="number-reviews">815 reviews</p>
+                  </div>
+                </div>
+                <div class="reviews-content__review">
+                  <div class="review-person">
+                    <svg class="review-person__icon">
+                      <use href="./image/sprite.svg#review-person-icon" />
+                    </svg>
+                    <div class="review-person-info">
+                      <p class="person-name">Anika Messer</p>
+                      <p class="person-country">🇩🇪 Germany</p>
+                    </div>
+                  </div>
+                  <p class="reviews-text">
+                    Efficient, friendly, professional, and appropriately
+                    attentive. Great hotel in a great location. Easy access to
+                    all the surrounding historical sites. Staff is fantastic.
+                    Will definitely stay at this location during my next stay in
+                    Marocco.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-content__navigation">
+            <div class="navigation-circle circle-active"></div>
+            <div class="navigation-circle first"></div>
+            <div class="navigation-circle second"></div>
+            <div class="navigation-circle third"></div>
+          </div>
         </div>
-        <div class="sing-up__item">
-          <p class="sing-up__text">
-            Sign up <span class="sing-up__text-xs">in the app</span> and get 20%
-            off your first booking
-          </p>
-          <button class="sing-up__button-md">Sign up</button>
-        </div>
-        <button class="sing-up__button-xs">Install</button>
-      </div>
+      </section>
     </section>
     <footer class="footer-container">
       <div class="footer-content">
